@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: fact_coins
+    description: >
+      List of all the coins that are being tracked.
+
+  - name: fact_btc
+    description: >
+      All of the data collected for Bitcoin.
+
+  - name: fact_eth
+    description: >
+      All of the data collected for Etherium.
+
+  - name: fact_usdt
+    description: >
+      All of the data collected for Tether.
+
+  - name: fact_bnb
+    description: >
+      All of the data collected for BNB.
+
+  - name: fact_usdcc
+    description: >
+      All of the data collected for USD Coin.
+
+  - name: fact_xrp
+    description: >
+      All of the data collected for XRP.
+
+  - name: fact_ada
+    description: >
+      All of the data collected for Cardano.
+
+  - name: fact_doge
+    description: >
+      All of the data collected for Dogecoin.
+      
