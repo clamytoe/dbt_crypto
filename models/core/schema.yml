@@ -3,37 +3,37 @@ version: 2
 models:
   - name: fact_coins
     description: >
-      List of all the coins that are being tracked.
+      Data on all of the coins that are being tracked.
 
   - name: fact_btc
     description: >
-      All of the data collected for Bitcoin.
+      Averaged results per hour for Bitcoin.
 
   - name: fact_eth
     description: >
-      All of the data collected for Etherium.
+      Averaged results per hour for Etherium.
 
   - name: fact_usdt
     description: >
-      All of the data collected for Tether.
+      Averaged results per hour for Tether.
 
   - name: fact_bnb
     description: >
-      All of the data collected for BNB.
+      Averaged results per hour for BNB.
 
   - name: fact_usdcc
     description: >
-      All of the data collected for USD Coin.
+      Averaged results per hour for USD Coin.
 
   - name: fact_xrp
     description: >
-      All of the data collected for XRP.
+      Averaged results per hour for XRP.
 
   - name: fact_ada
     description: >
-      All of the data collected for Cardano.
+      Averaged results per hour for Cardano.
 
   - name: fact_doge
     description: >
-      All of the data collected for Dogecoin.
+      Averaged results per hour for Dogecoin.
       
