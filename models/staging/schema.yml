@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dtc-de-course-374214
+    schema: crypto_decap
+
+    tables:
+      - name: coins
