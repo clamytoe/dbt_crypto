@@ -7,3 +7,38 @@ sources:
 
     tables:
       - name: coins
+
+models:
+  - name: stg_coins
+    description: >
+      CoinCap's goal is to give you the most real-time view of cryptocurrency trading taking
+      place around the world. Built to meet the needs of cryptocurrency enthusiasts, CoinCap
+      adapts to the unique demands of cryptocurrency markets. This is a subset of that data.
+    columns:
+      - name: id
+        description: Unique identifier for asset
+        tests:
+          - not_null:
+              severity: warn
+      - name: timestamp
+        description: The time that the data was collected
+      - name: rank
+        description: >
+          Rank is in ascending order - this number is directly associated with the marketcap
+          whereas the highest marketcap receives rank 1
+      - name: symbol
+        description: Most common symbol used to identify this asset on an exchange
+      - name: name
+        description: Proper name for asset
+      - name: supply
+        description: Available supply for trading
+      - name: market_cap_usd
+        description: Supply x price
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours
+      - name: url
+        description: The Internet address for the coin's website
