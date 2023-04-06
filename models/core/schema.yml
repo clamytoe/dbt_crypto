@@ -2,38 +2,145 @@ version: 2
 
 models:
   - name: fact_coins
-    description: >
-      Data on all of the coins that are being tracked.
+    description: Data on all of the coins that are being tracked.
+    columns:
+      - name: id
+        description: Unique identifier for asset
+        tests:
+          - not_null:
+              severity: warn
+      - name: timestamp
+        description: The time that the data was collected
+      - name: rank
+        description: >
+          Rank is in ascending order - this number is directly associated with the marketcap
+          whereas the highest marketcap receives rank 1
+      - name: symbol
+        description: Most common symbol used to identify this asset on an exchange
+      - name: name
+        description: Proper name for asset
+      - name: supply
+        description: Available supply for trading
+      - name: market_cap_usd
+        description: Supply x price
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours
+      - name: url
+        description: The Internet address for the coin's website
 
   - name: fact_btc
-    description: >
-      Averaged results per hour for Bitcoin.
+    description: Averaged results per hour for Bitcoin
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_eth
-    description: >
-      Averaged results per hour for Etherium.
+    description: Averaged results per hour for Etherium
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_usdt
-    description: >
-      Averaged results per hour for Tether.
+    description: Averaged results per hour for Tether
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_bnb
-    description: >
-      Averaged results per hour for BNB.
+    description: Averaged results per hour for BNB
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_usdcc
-    description: >
-      Averaged results per hour for USD Coin.
+    description: Averaged results per hour for USD Coin
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_xrp
-    description: >
-      Averaged results per hour for XRP.
+    description: Averaged results per hour for XRP
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_ada
-    description: >
-      Averaged results per hour for Cardano.
+    description: Averaged results per hour for Cardano
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
 
   - name: fact_doge
-    description: >
-      Averaged results per hour for Dogecoin.
+    description: Averaged results per hour for Dogecoin
+    columns:
+      - name: timestamp
+        description: The time that the data was collected
+      - name: price_usd
+        description: Volume-weighted price based on real-time market data, translated to USD averaged by hour
+      - name: supply_avg
+        description: Supply for trading averaged by hour
+      - name: volume_usd_24hr
+        description: Quantity of trading volume represented in USD over the last 24 hours averaged by hour
+      - name: change_precent_24hr
+        description: The direction and value change in the last 24 hours averaged by hour
       
