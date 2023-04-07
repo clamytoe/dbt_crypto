@@ -12,6 +12,6 @@ select
     avg(volume_usd_24hr) as volume_avg,
     avg(change_percent_24hr) as change_percent_avg
 from coins
-where id = 'etherium'
+where id = 'ethereum'
 group by `timestamp`
 order by `timestamp` asc
