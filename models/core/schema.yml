@@ -31,6 +31,18 @@ models:
         description: The direction and value change in the last 24 hours
       - name: url
         description: The Internet address for the coin's website
+        
+  - name: fact_forecast
+    description: This table attempts to fill in the gaps where some captures might have been missed.
+    columns:
+      - name: symbol
+        description: Most common symbol used to identify this asset on an exchange
+      - name: hour
+        description: The hour from which the data was collected
+      - name: avg_price_usd
+        description: >
+          Averaged volume-weighted price based on real-time market data, translated to USD. This is 
+          the aggregate price of the coin for the time span of that hour block.
 
   - name: fact_btc
     description: Averaged results per hour for Bitcoin
